@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/register/register.css">
+</head>
+
+<body>
+    <div class="reg-container">
+        <h1>REGISTRATION</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name </label>
+                <input placeholder="Enter Full Name" type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Enter E-mail </label>
+                <input placeholder="Enter E-mail ID" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone">Enter Mobile-No </label>
+                <input placeholder="Enter Your Mobile-No" type="number" id="number" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input placeholder="Enter City" type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input placeholder="Enter State" type="text" id="State" name="State" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input placeholder="Enter Country" type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="password"> Password</label>
+                <input placeholder="Create Password" type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input placeholder="Confirm Password" type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <div class="login">
+            <p>Already have an Account ? </p>
+            <div class="login-btn">
+                <button class="btn  login_btn" id="login">Login Now</button>
+            </div>
+        </div>
+    </div>
+<script src="register.js"></script>
+</body>
+
+</html>

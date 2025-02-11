@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    background-image: url(/1.Images/beautiful-coast-palm-sunny-vacation.jpg);
+    background-size: cover;
+}
+
+.newpass-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.newpass-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: beige;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: beige;
+}
+.pass-txt{
+    margin-top: 5px;
+}
+
+.form-group input {
+    width: 94% ;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background:#441919;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .newpass-container {
+        padding: 9px;
+        width: 350px;
+        margin: 15px;
+    }
+}
