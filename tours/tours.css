@@ -147,7 +147,8 @@ nav>ul>li {
 #hamburger-checkbox {
     display: none;
 }
-.login-container{
+
+.login-container {
     margin-right: 40px;
 }
 
@@ -188,7 +189,7 @@ main::before {
     text-align: center;
 }
 
-.destination__container :is(.section__header, .section__description,) {
+.destination__container :is(.section__header, .section__description, ) {
     text-align: left;
     margin-inline-start: unset;
 }
@@ -227,6 +228,10 @@ main::before {
     color: var(--text-light);
 }
 
+.custom {
+    padding: 10px;
+    padding-bottom: 20px;
+}
 
 footer {
     background-color: var(--extra-light);
@@ -369,7 +374,7 @@ footer {
 }
 
 @media (width < 650px) {
-    
+
     .destination__card img {
         width: 350px;
     }
@@ -379,7 +384,8 @@ footer {
         gap: 4rem 2rem;
         grid-template-columns: 2fr 1fr;
     }
-    .main__content h1{
+
+    .main__content h1 {
         font-size: 40px;
         font-weight: 600;
     }

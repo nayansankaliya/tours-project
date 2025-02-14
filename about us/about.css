@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.team-member {
+    transition: transform 0.3s;
+}
+.team-member:hover {
+    transform: scale(1.05);
+}
