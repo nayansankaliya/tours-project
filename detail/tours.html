@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Package Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .package-header {
+            background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header class="package-header text-center">
+        <h1>Explore the Beauty of Bali</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Tour Highlights</h2>
+                <p>Enjoy a 7-day, 6-night adventure in Bali, including scenic beaches, cultural experiences, and luxury stays.</p>
+                <h3>Itinerary</h3>
+                <ul>
+                    <li>Day 1: Arrival & Welcome Dinner</li>
+                    <li>Day 2: Beach & Water Activities</li>
+                    <li>Day 3: Ubud Cultural Tour</li>
+                    <li>Day 4: Temple & Sunset Tour</li>
+                    <li>Day 5: Free Day for Exploration</li>
+                    <li>Day 6: Spa & Shopping</li>
+                    <li>Day 7: Departure</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2>Tour Price</h2>
+                <p class="fs-4 text-danger">$1,299 per person</p>
+                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+        </div>
+        
+        <h2 class="mt-5">Gallery</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://source.unsplash.com/800x400/?beach" class="d-block w-100" alt="Beach">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/800x400/?temple" class="d-block w-100" alt="Temple">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/800x400/?resort" class="d-block w-100" alt="Resort">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                       
+                        <button type="submit" class="btn btn-success w-100">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for booking! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
