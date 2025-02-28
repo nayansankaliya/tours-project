@@ -4,12 +4,36 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f8f9fa;
+    background-image: url(/1.Images/feedback.jpg);
+    background-size: cover;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #441919;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 .signup-container {
+    color: beige;
     width: 100%;
     max-width: 400px;
-    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+}
+p{
+    color: beige;
+}
+.btn:hover {
+    background: #441919;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
 }

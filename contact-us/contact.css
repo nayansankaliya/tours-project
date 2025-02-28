@@ -5,6 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
+    background-image: url(/1.Images/cutomize.jpg);
+    background-size: cover;
 }
 
 .container {
